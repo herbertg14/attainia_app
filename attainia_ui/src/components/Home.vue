@@ -1,6 +1,7 @@
 <template>
-  <div class="hello">
-    <h1>Home</h1>
+  <div>
+    <h1>Attainia App</h1>
+
   </div>
 </template>
 
