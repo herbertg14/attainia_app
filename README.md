@@ -17,3 +17,8 @@ Admin credentials
 email: admin@admin.com
 username: admin
 password: adminpassword
+
+
+Migrations
+python manage.py makemigrations
+python manage.py migrate
