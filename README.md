@@ -13,9 +13,9 @@
 7. python manage.py runserver 
 
 ##### Admin information 
-..* email: admin@admin.com
-..* username: admin
-..* password: adminpassword
+* email: admin@admin.com
+* username: admin
+* password: adminpassword
 
 
 ### How to run Vue App
