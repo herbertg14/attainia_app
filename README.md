@@ -1,24 +1,25 @@
 # attainia_app
 
-Notes
-
-How to run Virtual Env
-
-python3 -m venv env
-source env/bin/activate (env\Scripts\activate)
-pip install -r requirements.txt
 
 
-How to run the server 
-cd AttainiaProject/
-python manage.py runserver 
+### How to run Django API
 
-Admin credentials 
-email: admin@admin.com
-username: admin
-password: adminpassword
+1. python -m venv env
+2. source env/bin/activate (env\Scripts\activate)
+3. pip install -r requirements.txt
+4. cd AttainiaProject/
+5. python manage.py makemigrations
+6. python manage.py migrate
+7. python manage.py runserver 
+
+##### Admin information 
+..* email: admin@admin.com
+..* username: admin
+..* password: adminpassword
 
 
-Migrations
-python manage.py makemigrations
-python manage.py migrate
+### How to run Vue App
+
+1. cd attainia_ui
+2. npm install 
+3. npm run serve

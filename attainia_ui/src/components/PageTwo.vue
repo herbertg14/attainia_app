@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Table 2 component</h1>
-    <button v-on:click="activate">Toggle</button>
+    <b-button v-on:click="activate">Toggle</b-button>
     <Table v-bind:users="users" v-bind:fields="fields" v-bind:toggleType="'table-success'"></Table>
   </div>
 </template>
@@ -41,28 +41,28 @@ export default {
       this.toggled = !this.toggled;
 
       if (this.toggled == true){
-        let newUsers = [];
+        let updatedUsers = [];
 
         for (let i = 0; i < this.users.length; i++){
           let user = this.users[i];
           if (user.login_count > 0){
             user.toggle = true;
           }
-          newUsers.push(user);
+          updatedUsers.push(user);
         }
-        this.users = newUsers;
+        this.users = updatedUsers;
       }
 
       else{
-        let newUsers = [];
+        let updatedUsers = [];
 
         for (let i = 0; i < this.users.length; i++){
           let user = this.users[i];
           user.toggle = false;
-          newUsers.push(user);
+          updatedUsers.push(user);
         }
 
-        this.users = newUsers;
+        this.users = updatedUsers;
       }
     }
   }
